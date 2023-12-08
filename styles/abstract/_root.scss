@@ -1,0 +1,17 @@
+@use "../abstract/variaveis";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: variaveis.$fonte-padrao;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main aside";
+}

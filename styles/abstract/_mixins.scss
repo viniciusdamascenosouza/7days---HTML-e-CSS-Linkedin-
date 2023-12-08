@@ -1,0 +1,13 @@
+@use "./variaveis";
+
+@mixin fonte-style($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin flex-box($justifyC, $alignI) {
+    display: flex;
+    justify-content: $justifyC;
+    align-items: $alignI;
+}

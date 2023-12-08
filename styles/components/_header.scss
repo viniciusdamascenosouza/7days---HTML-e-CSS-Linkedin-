@@ -1,0 +1,45 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+header {
+    background: variaveis.$fundo-card;
+    padding: 10px 0;
+    @include mixins.flex-box(space-around, center);
+
+    .logo-pesquisa {
+        @include mixins.flex-box(center, center);
+        column-gap: 0.7rem;
+        .logo__img {
+            max-width: 100%;
+            width: 34px;
+        }
+
+        .input-wrapper {
+            padding: 6px 32px;
+            gap: 6px;
+            @include mixins.flex-box(left, center);
+
+            border-radius: 4px;
+            background: variaveis.$input;
+            input {
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+    .icones-cabecalho {
+        display: inline-flex;
+        column-gap: 1rem;
+
+        .item__menu-cabecalho {
+            @include mixins.flex-box(center, center);
+            flex-direction: column;
+            @include mixins.fonte-style(12px, 400, #FFF);
+
+            .item-linha__menu-cabecalho {
+                border-right: 1px solid #fff;
+                height: 100%;
+            }
+        }
+    }
+}
