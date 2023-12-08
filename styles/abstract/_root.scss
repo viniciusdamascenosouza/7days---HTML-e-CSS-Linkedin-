@@ -10,8 +10,27 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    background: #000;
     display: grid;
     grid-template-areas:
-        "header"
+        "header header"
         "main aside";
+}
+
+.cabecalho {
+    grid-area: header;
+}
+
+.conteudo__principal {
+    grid-area: main;
+}
+
+.recomendacoes {
+    grid-area: aside;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

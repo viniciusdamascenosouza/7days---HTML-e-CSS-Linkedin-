@@ -1,0 +1,99 @@
+@use "../abstract/mixins";
+@use "../abstract/variaveis";
+
+// PRIMEIRA SEÇÃO
+.painel__perfil {
+    margin: 2em 10%;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+
+    display: grid;
+    grid-template-columns: 5% 20% 25% 50%;
+    grid-template-rows: 20% 20% 10% 50%;
+    // grid-template-areas: "up"
+    // "center"
+    // "down";
+
+    .capa-perfil {
+        grid-area: 1 / 1 / 3 / 5;
+
+        .img-capa {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .foto-perfil {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .textos-perfil {
+        // background: variaveis.$fundo-card;
+        width: 760px;
+        border-radius: 0 0 16px 16px;
+        color: #fff;
+        text-align: left;
+        grid-area: 4 / 2 / 5 / 4;
+        padding-top: 2rem;
+        line-height: 20px;
+        @include mixins.flex-box(space-between, center);
+
+        .perfil-nome {
+            @include mixins.fonte-style(24px, 600, variaveis.$texto-principal);
+            line-height: 30px;
+        }
+        .perfil-titulo {
+            @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
+        }
+        .perfil-especificacoes {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+        }
+        .perfil-local {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+
+            span {
+                color: variaveis.$primario;
+                font-weight: 700;
+            }
+        }
+
+        .perfil-seguidores {
+            @include mixins.fonte-style(14px, 500, variaveis.$primario);
+
+            span {
+                color: variaveis.$texto-secundario;
+            }
+        }
+
+        .botoes {
+            margin-top: 1rem;
+        }
+
+        .botao-mensagem {
+            border: 1px solid variaveis.$primario;
+            border-radius: 16px;
+            background: variaveis.$primario;
+            padding: 6px 29px;
+            @include mixins.fonte-style(14px, 500, #fff);
+        }
+
+        .botao-mais {
+            @extend .botao-mensagem;
+            background: variaveis.$fundo-card;
+            @include mixins.fonte-style(14px, 500, variaveis.$primario);
+        }
+
+        .empresa-instituicao {
+            @include mixins.flex-box(center, left);
+            flex-direction: column;
+            row-gap: 0.8rem;
+
+            .links-empresa-instituicao {
+                @include mixins.flex-box(left, center);
+                column-gap: 0.5rem;
+                @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
+            }
+        }
+    }
+}
