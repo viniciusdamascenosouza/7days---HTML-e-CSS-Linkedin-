@@ -2,6 +2,7 @@
 @use "../abstract/variaveis";
 
 // PRIMEIRA SEÇÃO
+
 .painel__perfil {
     margin: 2em 10%;
     border: none;
@@ -93,6 +94,66 @@
                 @include mixins.flex-box(left, center);
                 column-gap: 0.5rem;
                 @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
+            }
+        }
+    }
+}
+
+// SEGUNDA SEÇÃO
+
+.destaques {
+    color: #fff;
+    margin: 2em 10%;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+    padding: 16px;
+
+    .titulo-destaques {
+        @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
+        line-height: 60px;
+    }
+
+    .cards {
+        @include mixins.flex-box(center, center);
+        column-gap: 1rem;
+    }
+
+    .box-destaques {
+        border: 1px solid variaveis.$texto-secundario;
+        border-radius: 8px;
+        // padding: 5px;
+        line-height: 20px;
+
+        .parte-superior-card{
+            padding: 10px 8px;
+
+            .texto__um-destaques {
+                @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
+            }
+            .texto__dois-destaques {
+                @include mixins.fonte-style(14px, 400, variaveis.$texto-principal);
+            }
+        }
+
+        .img-destaques {
+            width: 100%;
+        }
+
+        .parte-inferior-card {
+            @include mixins.flex-box(space-between, center);
+            padding: 10px 8px;
+
+            .reacoes {
+                @include mixins.flex-box(none, center);
+                column-gap: 0.5rem;
+
+                .qtd-reacoes {
+                    @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
+                }
+            }
+            .comentarios {
+                @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
             }
         }
     }
