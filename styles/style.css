@@ -156,13 +156,14 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   background: #70b5f9;
   padding: 6px 29px;
   font-size: 14px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 600;
+  color: hsla(0, 0%, 0%, 0.75);
+  cursor: pointer;
 }
 .painel__perfil .textos-perfil .botao-mais {
   background: #1d2226;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #70b5f9;
 }
 .painel__perfil .textos-perfil .empresa-instituicao {
@@ -244,6 +245,83 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   color: hsla(0, 0%, 100%, 0.6);
 }
 .destaques .box-destaques .parte-inferior-card .comentarios {
+  font-size: 12px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.atividades {
+  margin: 2em 10%;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 16px;
+  background-color: #1d2226;
+  color: #fff;
+}
+.atividades .linha-divisoria {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.6);
+  margin: 0.3rem 0;
+  width: 80%;
+}
+.atividades .titulo-atividades {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsla(0, 0%, 100%, 0.9);
+  line-height: 30px;
+}
+.atividades .subtitulo-atividades {
+  font-size: 14px;
+  font-weight: 500;
+  color: #70b5f9;
+  margin-bottom: 1rem;
+}
+.atividades .textos-atividades {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-bottom: 1px solid 80% hsla(0, 0%, 100%, 0.6);
+}
+.atividades .textos-atividades .textos-atividades-primeiro .texto-atividades-primeiro__um {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.atividades .textos-atividades .textos-atividades-segundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.atividades .textos-atividades .textos-atividades-segundo .texto-publicacoes {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.atividades .textos-atividades .textos-atividades-segundo .img-atividades-segundo {
+  width: 64px;
+  max-width: 100%;
+}
+.atividades .textos-atividades .comentarios-reacoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.atividades .textos-atividades .comentarios-reacoes .reacoes-atividades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.atividades .textos-atividades .comentarios-reacoes .reacoes-atividades .qtd-reacoes-atividades {
+  font-size: 12px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.atividades .textos-atividades .comentarios-reacoes .qtd-comentarios {
   font-size: 12px;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.6);

@@ -76,13 +76,14 @@
             border-radius: 16px;
             background: variaveis.$primario;
             padding: 6px 29px;
-            @include mixins.fonte-style(14px, 500, #fff);
+            @include mixins.fonte-style(14px, 600, variaveis.$texto-escuro);
+            cursor: pointer;
         }
 
         .botao-mais {
             @extend .botao-mensagem;
             background: variaveis.$fundo-card;
-            @include mixins.fonte-style(14px, 500, variaveis.$primario);
+            @include mixins.fonte-style(14px, 600, variaveis.$primario);
         }
 
         .empresa-instituicao {
@@ -125,7 +126,7 @@
         // padding: 5px;
         line-height: 20px;
 
-        .parte-superior-card{
+        .parte-superior-card {
             padding: 10px 8px;
 
             .texto__um-destaques {
@@ -153,6 +154,74 @@
                 }
             }
             .comentarios {
+                @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
+            }
+        }
+    }
+}
+
+// TERCEIRA SEÇÃO
+.atividades {
+    margin: 2em 10%;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+    color: #fff;
+
+    .linha-divisoria {
+        border-bottom: 1px solid variaveis.$texto-secundario;
+        margin: 0.3rem 0;
+        width: 80%;
+    }
+
+    .titulo-atividades {
+        @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
+        line-height: 30px;
+    }
+    .subtitulo-atividades {
+        @include mixins.fonte-style(14px, 500, variaveis.$primario);
+        margin-bottom: 1rem;
+    }
+
+    .textos-atividades {
+        @include mixins.flex-box(left, left);
+        flex-direction: column;
+        row-gap: 1rem;
+        border-bottom: 1px solid 80% variaveis.$texto-secundario;
+
+        .textos-atividades-primeiro {
+            .texto-atividades-primeiro__um {
+                @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+            }
+        }
+        .textos-atividades-segundo {
+            @include mixins.flex-box(center, center);
+            column-gap: 1rem;
+
+            .texto-publicacoes {
+                @include mixins.fonte-style(14px, 400, #fff);
+            }
+
+            .img-atividades-segundo {
+                width: 64px;
+                max-width: 100%;
+            }
+        }
+
+        .comentarios-reacoes {
+            @include mixins.flex-box(space-between, center);
+
+            .reacoes-atividades {
+                @include mixins.flex-box(center, center);
+                column-gap: 0.5rem;
+
+                .qtd-reacoes-atividades {
+                    @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
+                }
+            }
+
+            .qtd-comentarios {
                 @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
             }
         }
