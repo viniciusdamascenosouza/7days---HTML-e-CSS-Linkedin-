@@ -169,12 +169,6 @@
     background-color: variaveis.$fundo-card;
     color: #fff;
 
-    .linha-divisoria {
-        border-bottom: 1px solid variaveis.$texto-secundario;
-        margin: 0.3rem 0;
-        width: 80%;
-    }
-
     .titulo-atividades {
         @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
         line-height: 30px;
@@ -184,46 +178,64 @@
         margin-bottom: 1rem;
     }
 
-    .textos-atividades {
-        @include mixins.flex-box(left, left);
+    .atividades-puclicacao01 {
+        @include mixins.flex-box(none, none);
         flex-direction: column;
-        row-gap: 1rem;
-        border-bottom: 1px solid 80% variaveis.$texto-secundario;
+        row-gap: 0.7rem;
 
-        .textos-atividades-primeiro {
-            .texto-atividades-primeiro__um {
-                @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
-            }
+        .atividades-puclicacao__nome {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+            line-height: 30px;
         }
-        .textos-atividades-segundo {
-            @include mixins.flex-box(center, center);
+
+        .imagem-texto-publicacao {
+            @include mixins.flex-box(none, none);
             column-gap: 1rem;
 
-            .texto-publicacoes {
-                @include mixins.fonte-style(14px, 400, #fff);
+            .img-publicacao01 {
+                width: 120px;
+                max-width: 100%;
             }
 
-            .img-atividades-segundo {
-                width: 64px;
-                max-width: 100%;
+            .txt-publicacao01 {
+                @include mixins.fonte-style(14px, 400, #FFF);
             }
         }
 
-        .comentarios-reacoes {
+        .reacoes-comentarios-publicacao {
             @include mixins.flex-box(space-between, center);
 
-            .reacoes-atividades {
-                @include mixins.flex-box(center, center);
-                column-gap: 0.5rem;
+            .reacoes-publicacao {
+                @include mixins.flex-box(flex-start, center);
+                column-gap: 0.4rem;
 
-                .qtd-reacoes-atividades {
+                .qtd-reacoes {
                     @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
                 }
-            }
 
-            .qtd-comentarios {
+                img {
+                    max-width: 100%;
+                }
+            }
+            
+            .comentarios {
                 @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
             }
         }
+
+        .linha-divisoria01 {
+            border-bottom: 1px solid variaveis.$texto-secundario;
+            width: 100%;
+        }
+
+        .exibir-todas {
+            @include mixins.fonte-style(14px, 500, variaveis.$texto-secundario);
+            padding-top: 6px;
+            text-align: center;
+        }
+    }
+
+    .atividades-puclicacao02 {
+        @extend .atividades-puclicacao01;
     }
 }
