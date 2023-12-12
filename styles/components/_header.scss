@@ -19,6 +19,7 @@ header {
             padding: 6px 32px;
             gap: 6px;
             @include mixins.flex-box(left, center);
+            height: 22px;
 
             border-radius: 4px;
             background: variaveis.$input;

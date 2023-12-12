@@ -53,6 +53,7 @@ header .logo-pesquisa .input-wrapper {
   display: flex;
   justify-content: left;
   align-items: center;
+  height: 22px;
   border-radius: 4px;
   background: #38434f;
 }
@@ -82,6 +83,7 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 
 .painel__perfil {
   margin: 2em 0;
+  padding: 16px;
   border: none;
   border-radius: 16px;
   background-color: #1d2226;
@@ -89,19 +91,22 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   width: 100%;
   display: grid;
   grid-template-columns: 5% 20% 20% 50% 5%;
-  grid-template-rows: 18% 20% 8%;
+  grid-template-rows: 24% 28% 8%;
 }
 .painel__perfil .capa-perfil {
-  grid-area: 1/1/3/5;
+  grid-area: 1/1/3/6;
+  width: 100%;
 }
 .painel__perfil .capa-perfil .img-capa {
-  width: 100%;
-  max-height: 230px;
-  max-width: 100%;
+  width: 101%;
+  max-width: 101%;
 }
 .painel__perfil .foto-perfil {
   grid-area: 2/2/4/3;
   position: relative;
+}
+.painel__perfil .foto-perfil .img-perfil {
+  max-width: 100%;
 }
 .painel__perfil .textos-perfil {
   background: #1d2226;
@@ -112,7 +117,7 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   justify-content: space-between;
   align-items: center;
   grid-area: 4/2/5/5;
-  line-height: 20px;
+  line-height: 25px;
 }
 .painel__perfil .textos-perfil .informacoes-perfil .perfil-nome {
   font-size: 24px;
