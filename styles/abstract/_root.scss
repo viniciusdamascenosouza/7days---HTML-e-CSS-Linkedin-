@@ -13,22 +13,24 @@ body {
 
     background: #000;
     display: grid;
-    grid-template-areas:
-        "header header"
-        "main aside";
+    grid-template-columns: 10% 55% 25% 10%;
+    grid-template-rows: 3% 97%;
+    // grid-template-areas:
+    //     "header header"
+    //     "main aside";
 }
 
 .cabecalho {
-    grid-area: header;
+    grid-area: 1 / 1 / 2 / 5;
 }
 
 .conteudo__principal {
-    grid-area: main;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
-.recomendacoes {
-    grid-area: aside;
-}
+// .recomendacoes {
+//     grid-area: aside;
+// }
 
 a {
     text-decoration: none;
