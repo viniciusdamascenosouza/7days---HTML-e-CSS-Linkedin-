@@ -335,7 +335,49 @@
 
             .info-cargo-txt04 {
                 @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
-            } 
+            }
+        }
+    }
+}
+
+// SEXTA SEÇÃO
+
+.formacao {
+    margin: 1.5rem 0;
+    padding: 20px 26px;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+
+    .titulo-formacao {
+        @include mixins.fonte-style(20px, 600, #fff);
+        line-height: 30px;
+    }
+
+    .formacao-academica {
+        display: flex;
+        column-gap: 0.8rem;
+
+        .img-formacao-academica {
+            width: 48px;
+            max-width: 100%
+        }
+
+        .formacao-academica__texto01 {
+            @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
+            line-height: 20px;
+        }
+
+        .formacao-academica__texto02 {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-principal);
+            line-height: 16px;
+        }
+
+        .formacao-academica__texto03 {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
         }
     }
 }

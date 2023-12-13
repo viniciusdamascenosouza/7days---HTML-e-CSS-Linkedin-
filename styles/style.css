@@ -442,4 +442,47 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   font-size: 14px;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.6);
+}
+
+.formacao {
+  margin: 1.5rem 0;
+  padding: 20px 26px;
+  border: none;
+  border-radius: 16px;
+  background-color: #1d2226;
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+}
+.formacao .titulo-formacao {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 30px;
+}
+.formacao .formacao-academica {
+  display: flex;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+.formacao .formacao-academica .img-formacao-academica {
+  width: 48px;
+  max-width: 100%;
+}
+.formacao .formacao-academica .formacao-academica__texto01 {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsla(0, 0%, 100%, 0.9);
+  line-height: 20px;
+}
+.formacao .formacao-academica .formacao-academica__texto02 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.9);
+  line-height: 16px;
+}
+.formacao .formacao-academica .formacao-academica__texto03 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
 }/*# sourceMappingURL=style.css.map */
