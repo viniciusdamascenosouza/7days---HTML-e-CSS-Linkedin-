@@ -36,7 +36,7 @@ header {
         .item__menu-cabecalho {
             @include mixins.flex-box(center, center);
             flex-direction: column;
-            @include mixins.fonte-style(12px, 400, #FFF);
+            @include mixins.fonte-style(12px, 400, #fff);
             cursor: pointer;
 
             .item-linha__menu-cabecalho {

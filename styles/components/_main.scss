@@ -1,7 +1,7 @@
 @use "../abstract/mixins";
 @use "../abstract/variaveis";
 
-// PRIMEIRA SEÇÃO
+// SEÇÃO PAINEL PERFIL
 .painel__perfil {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -15,44 +15,45 @@
     grid-template-columns: 5% 20% 20% 50% 5%;
     grid-template-rows: 20% 25% 5% 50%;
 
-    .capa-perfil {
+    &-capa {
         grid-area: 1 / 1 / 3 / 6;
         width: 100%;
 
-        .img-capa {
+        &-img {
             width: 101%;
             max-width: 101%;
         }
     }
 
-    .foto-perfil {
+    &-foto {
         grid-area: 2 / 2 / 4 / 3;
         position: relative;
 
-        .img-perfil {
+        &-img {
             max-width: 100%;
         }
     }
 
-    .textos-perfil {
+    .textos__perfil {
         background: variaveis.$fundo-card;
         border-radius: 0 0 16px 16px;
         color: #fff;
         text-align: left;
-        @include mixins.flex-box(space-between, center);        grid-area: 4 / 2 / 5 / 5;
+        @include mixins.flex-box(space-between, center);
+        grid-area: 4 / 2 / 5 / 5;
         line-height: 25px;
-        .informacoes-perfil {
-            .perfil-nome {
+        &-infos {
+            &-nome {
                 @include mixins.fonte-style(24px, 600, variaveis.$texto-principal);
                 line-height: 30px;
             }
-            .perfil-titulo {
+            &-titulo {
                 @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
             }
-            .perfil-especificacoes {
+            &-especificacoes {
                 @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
             }
-            .perfil-local {
+            &-local {
                 @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
 
                 span {
@@ -61,7 +62,7 @@
                 }
             }
 
-            .perfil-seguidores {
+            &-seguidores {
                 @include mixins.fonte-style(14px, 500, variaveis.$primario);
 
                 span {
@@ -103,7 +104,7 @@
     }
 }
 
-// SEGUNDA SEÇÃO
+// SEÇAO DESTAQUES
 .destaques {
     color: #fff;
     margin: 1.5rem 0;
@@ -164,7 +165,7 @@
     }
 }
 
-// TERCEIRA SEÇÃO
+// SEÇÃO ATIVIDADES
 .atividades {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -245,7 +246,7 @@
     }
 }
 
-// QUARTA SEÇÃO
+// SEÇÃO SOBRE
 .sobre {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -266,7 +267,7 @@
     }
 }
 
-// QUINTA SEÇÃO
+// SEÇÃO EXPERIÊNCIAS
 .experiencias {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -339,7 +340,7 @@
     }
 }
 
-// SEXTA SEÇÃO
+// SEÇÃO FORMAÇÃO
 .formacao {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -361,7 +362,7 @@
 
         .img-formacao-academica {
             width: 48px;
-            max-width: 100%
+            max-width: 100%;
         }
 
         .formacao-academica__texto01 {
@@ -380,7 +381,7 @@
     }
 }
 
-// SÉTIMA SEÇÃO
+// SEÇÃO IDIOMAS
 .idiomas {
     margin: 1.5rem 0 5rem 0;
     padding: 20px 26px;
@@ -402,7 +403,7 @@
         row-gap: 0.7rem;
 
         h4 {
-            @include mixins.fonte-style(16px, 600, #FFF);
+            @include mixins.fonte-style(16px, 600, #fff);
             line-height: 30px;
         }
 
