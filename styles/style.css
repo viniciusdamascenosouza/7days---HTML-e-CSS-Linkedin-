@@ -305,7 +305,7 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 .atividades .atividades-puclicacao01 .imagem-texto-publicacao .txt-publicacao01, .atividades .atividades-puclicacao02 .imagem-texto-publicacao .txt-publicacao01 {
   font-size: 14px;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
 }
 .atividades .atividades-puclicacao01 .reacoes-comentarios-publicacao, .atividades .atividades-puclicacao02 .reacoes-comentarios-publicacao {
   display: flex;
@@ -361,6 +361,85 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 .sobre .sobre-mim {
   font-size: 14px;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
   line-height: 20px;
+}
+
+.experiencias {
+  margin: 1.5rem 0;
+  padding: 20px 26px;
+  border: none;
+  border-radius: 16px;
+  background-color: #1d2226;
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column;
+  row-gap: 0.7rem;
+}
+.experiencias .titulo-experiencias {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 40px;
+}
+.experiencias .empresa-trabalhada-experiencia {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.experiencias .empresa-trabalhada-experiencia .img-empresa-trabalhada {
+  width: 48px;
+  max-width: 100%;
+}
+.experiencias .empresa-trabalhada-experiencia .nome-tempo-trabalhada-experiencia {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+}
+.experiencias .empresa-trabalhada-experiencia .nome-tempo-trabalhada-experiencia .nome__empresa-trabalhada-experiencia {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.experiencias .empresa-trabalhada-experiencia .nome-tempo-trabalhada-experiencia .tempo__empresa-trabalhada-experiencia {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.experiencias .cargos-experiencias {
+  display: flex;
+  justify-content: none;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-left: 20px;
+}
+.experiencias .cargos-experiencias .cargo-experiencias {
+  display: flex;
+  gap: 1.3rem;
+}
+.experiencias .cargos-experiencias .cargo-experiencias .info-cargo-txt01 {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+.experiencias .cargos-experiencias .cargo-experiencias .info-cargo-txt02 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+.experiencias .cargos-experiencias .cargo-experiencias .info-cargo-txt03 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.experiencias .cargos-experiencias .cargo-experiencias .info-cargo-txt04 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
 }/*# sourceMappingURL=style.css.map */

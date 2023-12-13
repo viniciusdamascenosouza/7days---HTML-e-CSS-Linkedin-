@@ -43,8 +43,6 @@
         grid-area: 4 / 2 / 5 / 5;
         line-height: 25px;
         .informacoes-perfil {
-
-
             .perfil-nome {
                 @include mixins.fonte-style(24px, 600, variaveis.$texto-principal);
                 line-height: 30px;
@@ -57,25 +55,25 @@
             }
             .perfil-local {
                 @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
-    
+
                 span {
                     color: variaveis.$primario;
                     font-weight: 700;
                 }
             }
-    
+
             .perfil-seguidores {
                 @include mixins.fonte-style(14px, 500, variaveis.$primario);
-    
+
                 span {
                     color: variaveis.$texto-secundario;
                 }
             }
-    
+
             .botoes {
                 margin-top: 1rem;
             }
-    
+
             .botao-mensagem {
                 border: 1px solid variaveis.$primario;
                 border-radius: 16px;
@@ -84,14 +82,13 @@
                 @include mixins.fonte-style(14px, 600, variaveis.$texto-escuro);
                 cursor: pointer;
             }
-    
+
             .botao-mais {
                 @extend .botao-mensagem;
                 background: variaveis.$fundo-card;
                 @include mixins.fonte-style(14px, 600, variaveis.$primario);
             }
         }
-
 
         .empresa-instituicao {
             @include mixins.flex-box(center, flex-start);
@@ -117,7 +114,6 @@
     padding: 20px 26px;
     max-width: 100%;
     width: 100%;
-
 
     .titulo-destaques {
         @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
@@ -179,7 +175,6 @@
     max-width: 100%;
     width: 100%;
 
-
     .titulo-atividades {
         @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
         line-height: 30px;
@@ -209,7 +204,7 @@
             }
 
             .txt-publicacao01 {
-                @include mixins.fonte-style(14px, 400, #FFF);
+                @include mixins.fonte-style(14px, 400, #fff);
             }
         }
 
@@ -228,7 +223,7 @@
                     max-width: 100%;
                 }
             }
-            
+
             .comentarios {
                 @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
             }
@@ -262,12 +257,85 @@
     width: 100%;
 
     .titulo-arte {
-        @include mixins.fonte-style(20px, 600,  variaveis.$texto-principal);
+        @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
         line-height: 40px;
     }
 
     .sobre-mim {
-        @include mixins.fonte-style(14px, 400, #FFF);
+        @include mixins.fonte-style(14px, 400, #fff);
         line-height: 20px;
+    }
+}
+
+// QUINTA SEÇÃO
+.experiencias {
+    margin: 1.5rem 0;
+    padding: 20px 26px;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+    @include mixins.flex-box(none, none);
+    flex-direction: column;
+    row-gap: 0.7rem;
+
+    .titulo-experiencias {
+        @include mixins.fonte-style(20px, 600, #fff);
+        line-height: 40px;
+    }
+
+    .empresa-trabalhada-experiencia {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+
+        .img-empresa-trabalhada {
+            width: 48px;
+            max-width: 100%;
+        }
+
+        .nome-tempo-trabalhada-experiencia {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.2rem;
+
+            .nome__empresa-trabalhada-experiencia {
+                @include mixins.fonte-style(16px, 600, #fff);
+            }
+
+            .tempo__empresa-trabalhada-experiencia {
+                @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+            }
+        }
+    }
+
+    .cargos-experiencias {
+        @include mixins.flex-box(none, flex-start);
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-left: 20px;
+
+        .cargo-experiencias {
+            display: flex;
+            gap: 1.3rem;
+
+            .info-cargo-txt01 {
+                @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
+            }
+
+            .info-cargo-txt02 {
+                @include mixins.fonte-style(16px, 400, variaveis.$texto-principal);
+            }
+
+            .info-cargo-txt03 {
+                @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+            }
+
+            .info-cargo-txt04 {
+                @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+            } 
+        }
     }
 }
