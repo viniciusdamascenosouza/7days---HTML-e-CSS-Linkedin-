@@ -1,0 +1,58 @@
+@use "../abstract/mixins";
+@use "../abstract/variaveis";
+
+.recomendacoes {
+    @include mixins.flex-box(none, center);
+    flex-direction: column;
+
+    .pessoas__viram {
+        color: #fff;
+        margin: 1.5rem 0;
+        border: none;
+        border-radius: 16px;
+        background-color: variaveis.$fundo-card;
+        padding: 16px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        .titulo-pessoas__viram {
+            @include mixins.fonte-style(16px, 600, variaveis.$texto-principal);
+        }
+
+        .perfil {
+            @include mixins.flex-box(none, none);
+            column-gap: 0.8rem;
+            
+            .img-infos {
+                width: 48px;
+                height: 48px;
+                max-width: 100%;
+            }
+
+            .info-perfil {
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.3rem;
+                .info-perfil__texto-um {
+                    @include mixins.fonte-style(14px, 700, #FFF);
+                }
+
+                .info-perfil__texto-dois {
+                    @include mixins.fonte-style(12px, 400, variaveis.$texto-secundario);
+                }
+
+                .info-perfil__botao {
+                    background: transparent;
+                    padding: 7px 16px;
+                    width: max-content;
+                    border: 1px solid variaveis.$texto-principal;
+                    border-radius: 16px;
+                    @include mixins.fonte-style(14px, 700, #FFF);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

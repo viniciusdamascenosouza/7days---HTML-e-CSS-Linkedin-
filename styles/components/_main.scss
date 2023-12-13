@@ -13,7 +13,7 @@
 
     display: grid;
     grid-template-columns: 5% 20% 20% 50% 5%;
-    grid-template-rows: 24% 28% 8%;
+    grid-template-rows: 20% 25% 5% 50%;
 
     .capa-perfil {
         grid-area: 1 / 1 / 3 / 6;
@@ -39,8 +39,7 @@
         border-radius: 0 0 16px 16px;
         color: #fff;
         text-align: left;
-        @include mixins.flex-box(space-between, center);
-        grid-area: 4 / 2 / 5 / 5;
+        @include mixins.flex-box(space-between, center);        grid-area: 4 / 2 / 5 / 5;
         line-height: 25px;
         .informacoes-perfil {
             .perfil-nome {
