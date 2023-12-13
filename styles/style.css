@@ -82,8 +82,8 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 }
 
 .painel__perfil {
-  margin: 2em 0;
-  padding: 16px;
+  margin: 1.5rem 0;
+  padding: 20px 26px;
   border: none;
   border-radius: 16px;
   background-color: #1d2226;
@@ -191,11 +191,11 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 
 .destaques {
   color: #fff;
-  margin: 2em 0;
+  margin: 1.5rem 0;
   border: none;
   border-radius: 16px;
   background-color: #1d2226;
-  padding: 16px;
+  padding: 20px 26px;
   max-width: 100%;
   width: 100%;
 }
@@ -258,8 +258,8 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
 }
 
 .atividades {
-  margin: 2em 0;
-  padding: 16px 22px;
+  margin: 1.5rem 0;
+  padding: 20px 26px;
   border: none;
   border-radius: 16px;
   background-color: #1d2226;
@@ -344,7 +344,7 @@ header .icones-cabecalho .item__menu-cabecalho .item-linha__menu-cabecalho {
   text-align: center;
 }
 .sobre {
-  margin: 2em 0;
+  margin: 1.5rem 0;
   padding: 20px 26px;
   border: none;
   border-radius: 16px;
