@@ -341,7 +341,6 @@
 }
 
 // SEXTA SEÇÃO
-
 .formacao {
     margin: 1.5rem 0;
     padding: 20px 26px;
@@ -354,7 +353,7 @@
 
     .titulo-formacao {
         @include mixins.fonte-style(20px, 600, #fff);
-        line-height: 30px;
+        line-height: 40px;
     }
 
     .formacao-academica {
@@ -377,6 +376,42 @@
         }
 
         .formacao-academica__texto03 {
+            @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
+        }
+    }
+}
+
+// SÉTIMA SEÇÃO
+.idiomas {
+    margin: 1.5rem 0 5rem 0;
+    padding: 20px 26px;
+    border: none;
+    border-radius: 16px;
+    background-color: variaveis.$fundo-card;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+
+    .titulo-idiomas {
+        @include mixins.fonte-style(20px, 600, variaveis.$texto-principal);
+        line-height: 40px;
+    }
+
+    .lista-idiomas {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.7rem;
+
+        h4 {
+            @include mixins.fonte-style(16px, 600, #FFF);
+            line-height: 30px;
+        }
+
+        .linha-divisoria-idiomas {
+            border-bottom: 1px solid variaveis.$texto-secundario;
+        }
+
+        p {
             @include mixins.fonte-style(14px, 400, variaveis.$texto-secundario);
         }
     }
